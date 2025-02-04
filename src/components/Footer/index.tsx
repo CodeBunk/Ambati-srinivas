@@ -68,7 +68,7 @@ const Footer = () => {
             <Icons variant="Instagram" Link="https://www.instagram.com/siva_srinivas23/" />
             {/* <Icons variant="Youtube" Link="https://www.youtube.com" /> */}
             <Icons variant="Twitter" Link="https://x.com/sivasrinivas_23" />
-            <Icons variant="LinkedIn" Link="www.linkedin.com/in/srinivasambati" />
+            <Icons variant="LinkedIn" Link="https://www.linkedin.com/in/srinivasambati" />
           </div>
         </div>
       </div>
