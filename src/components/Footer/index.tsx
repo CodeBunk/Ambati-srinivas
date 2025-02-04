@@ -57,16 +57,18 @@ const Footer = () => {
             </div>
           </div>
         </div> */}
-        <div className="text-white flex md:flex-row flex-col justify-between w-full p-10 items-center ">
+        <div className="text-white flex md:flex-row flex-col max-md:gap-10  justify-between w-full p-10 items-center ">
           <div className=" flex md:gap-10 gap-2 md:flex-row flex-col max-md:text-center ">
             <div>© 2025 All right reserved.</div>
             {/* <div>Privacy Policy</div>
             <div>Terms of Service</div> */}
           </div>
           <div className=" flex gap-4 items-center justify-center ">
-            <Icons variant="Youtube" Link="https://www.youtube.com" />
-            <Icons variant="Twitter" Link="https://www.twitter.com" />
-            <Icons variant="LinkedIn" Link="https://www.linkedin.com" />
+            {/* <Icons variant="Youtube" Link="https://www.youtube.com" /> */}
+            <Icons variant="Instagram" Link="https://www.instagram.com/siva_srinivas23/" />
+            {/* <Icons variant="Youtube" Link="https://www.youtube.com" /> */}
+            <Icons variant="Twitter" Link="https://x.com/sivasrinivas_23" />
+            <Icons variant="LinkedIn" Link="www.linkedin.com/in/srinivasambati" />
           </div>
         </div>
       </div>
