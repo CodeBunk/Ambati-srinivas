@@ -63,6 +63,7 @@ const Footer = () => {
             {/* <div>Privacy Policy</div>
             <div>Terms of Service</div> */}
           </div>
+
           <div className=" flex gap-4 items-center justify-center ">
             {/* <Icons variant="Youtube" Link="https://www.youtube.com" /> */}
             <Icons variant="Instagram" Link="https://www.instagram.com/siva_srinivas23/" />
