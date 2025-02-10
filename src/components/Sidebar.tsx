@@ -28,7 +28,7 @@ const Sidebar = (props: any) => {
 
                         <a href={prop?.Link} target="_blank" className="relative select-none z-10 flex items-center w-full h-full gap-5 m-[0.5px] p-1 px-2 border-[0.5px] border-transparent border-opacity-50 hover:border-white hover:border-opacity-50 cursor-pointer transition-all duration-600   rounded-lg">
                             <div className="flex items-center justify-center rounded-lg opacity-50 pointer-events-none bg-gradient-to-br hover:bg-white from-yellow-400 via-black to-black">
-                                <div className='p-4 '>
+                                <div className='p-2 '>
                                     <Icons variant={prop?.Icon} />
                                 </div>
                             </div>
