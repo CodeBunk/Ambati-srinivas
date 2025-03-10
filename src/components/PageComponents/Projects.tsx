@@ -94,7 +94,7 @@ const Projects = () => {
             <div className=' w-full grid md:grid-cols-3 gap-5  grid-cols-2 text-white *: '>
                 {ProjectData.map((data: any) =>
 
-                    <div onClick={() => data?.link ? window.open(data?.link, "_blank") : ""} className='  bg-black w-full h-full rounded-t-xl  rounded-b-md  hover:scale-[101%] transition-all  duration-500 hover:shadow-xl '>
+                    <div onClick={() => data?.link ? window.open(data?.link, "_blank") : ""} className='  bg-black/20 w-full h-full rounded-t-xl  rounded-b-xl    hover:scale-[102%] transition-all  duration-500 hover:shadow-xl '>
                         <div>
                             <img src={data?.Image ? data?.Image : "https://dummyimage.com/800x400/000/fff"} className='  rounded-xl aspect-video w-full h-full ' alt="" />
                         </div>

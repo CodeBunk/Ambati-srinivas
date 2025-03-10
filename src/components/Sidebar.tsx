@@ -7,9 +7,7 @@ import Icons from '@/components/Icons'
 const Sidebar = (props: any) => {
 
     const [image, serImage] = useState(DefaultImage)
-    useEffect(() => {
-        console.log(props?.props, "IMAGE TYPE")
-    }, [props])
+
 
     const data = [{ Icon: "Email", name: "Email", value: "asreddy5270@gmail.com", Link: "mailto:asreddy5270@gmail.com" },
     { Icon: "Phone", name: "Phone", value: "+91 903259****", Link: "tel:+919032594344" },

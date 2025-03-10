@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import macbook from "../assets/Macbook.png";
 import image from "../assets/IMG_20250106_231042282.jpg"
-const HeroImage = () => {
-
+const HeroImage = (props: any) => {
+  console.log(props)
 
   const [transform, setTransform] = useState("none");
   const [shadow, setShadow] = useState("shadow-lg");
@@ -27,21 +27,33 @@ const HeroImage = () => {
 
 
   return (
-    <div className=" flex flex-col  items-center  justify-around gap-10  md:p-10 p-4  pt-10    ">
+    <div className=" flex flex-col h-full  items-center  justify-around gap-5   md:p-10 p-4  pt-10    ">
       <div className="md:w-1/2 w-full cursor-pointer " style={{ transform, transformStyle: "preserve-3d" }}
       // onMouseMove={handleMouseMove}
       // onMouseLeave={handleMouseLeave}
       >
 
         {/* <img src={image} alt=" " className=" shadow shadow-xl w-full  h-auto transition-transform duration-200  object-cover rounded-xl  bg-black  overflow-hidden hover " /> */}
-        <img src={image} alt=" " className="w-full h-full selection-none shadow rounded-xl  object-cover transition-transform duration-300 ease-out"
+        <img src={props?.image} alt=" " className="w-full h-auto aspect-auto    selection-none shadow rounded-xl   object-cover transition-transform duration-300 ease-out"
           style={{ transform, transformStyle: "preserve-3d" }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave} />
       </div>
       <div className=" w-full h-20 font-WhyteRegular  text-xl text-center">
-        we are working on making this space a better place to land
-        <div className=" text-lg font-WhyteBold ">  - srinivas ambati</div>
+        {/* we are working on making this space a better place to land
+        <div className=" text-lg font-WhyteBold ">  - srinivas ambati</div> */}
+        {props?.description}
+      </div>
+      <div className="w-1/2 h-8 bg-gray/20 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+          style={{ width: `${props.percentage}%` }}
+        >
+          <div className="h-full bg-pattern opacity-50"></div>
+        </div>
+        <div className=" absolute left-0 animate-pulse flex items-center justify-center text-black text-md font-bold text-center w-full    ">
+          {props.percentage}% loading....
+        </div>
       </div>
     </div>
   );

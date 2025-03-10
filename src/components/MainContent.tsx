@@ -19,11 +19,11 @@ const MainContent = () => {
     }
 
     return (
-        <div className=' relative w-full h-full px-4 md:pb-4 overflow-hidden  scrollbar  '>
+        <div className=' relative w-full h-full bg-black md:pb-4 overflow-hidden  scrollbar  '>
             <div className='relative grid  h-10 md:grid-cols-3 grid-cols-5  bg-transparent overflow-scroll scrollbar-hide'>
                 <div className='absolute top-0 z-0 w-full bg-black h-1/2 rounded-t-xl'>
                 </div>
-                <div className='z-20 bg-white/10 h-1/2 rounded-t-xl' />
+                <div className='z-20 bg-black h-0 rounded-t-xl' />
                 <div className='z-20 flex    items-center justify-around gap-2 pt-2 text-sm font- bg-black w-full rounded-xl max-md:col-span-3' >
                     {Data?.map((data: any) =>
                         <div className={` relative cursor-pointer   hover:text-white ${Page?.link == data?.link ? " text-white " : " text-white/50 "} `}
@@ -33,10 +33,10 @@ const MainContent = () => {
                         </div>
                     )}
                 </div>
-                <div className='z-20 bg-white/10 h-1/2 rounded-t-xl' />
+                <div className='z-20 bg-blakc h-0 mt-4   rounded-t-xl' />
             </div>
-            <div className=' z-10 absolute top-0  h-full md:h-[calc(100%-40px)] overflow-hidden p-4  '>
-                <div className='h-full overflow-scroll scrollbar-hide'>
+            <div className=' z-10 absolute top-0  bg-black   h-full md:h-[calc(100%-0px)] overflow-hidden p-3  '>
+                <div className='h-full bg-white/10 p-4 overflow-scroll scrollbar-hide '>
                     {Data.map((data: any, index: number) => (
                         <div
                             key={index}
@@ -48,8 +48,6 @@ const MainContent = () => {
                         </div>
                     ))}
                 </div>
-
-
             </div>
         </div >
     )
