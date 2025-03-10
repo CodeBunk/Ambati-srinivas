@@ -87,7 +87,7 @@ const Projects = () => {
     ]
     const Location = useNavigate()
     return (
-        <div className=' min-h-screen w-full  py-8  '>
+        <div className=' h-full w-full  py-8  '>
             <div className=' text-2xl font-Bold pb-6 '>
                 Projects
             </div>
