@@ -1,50 +1,39 @@
-import React, { useState } from "react";
-import macbook from "../assets/Macbook.png";
-import image from "../assets/IMG_20250106_231042282.jpg"
+import react, { useState } from "react"
+import Sidebar from "@/components/Sidebar"
+import DefaultImage from "@/assets/avatar/default.jpeg"
+import open from "@/assets/avatar/Open.jpeg"
+import smile from "@/assets/avatar/smile.jpeg"
+import Sideeyed from "@/assets/avatar/sideEyed.jpeg"
+import MainContent from "./MainContent"
 const Hero = () => {
+    const [ImageType, setImageType] = useState(DefaultImage)
 
+    const handleImageChange = (type: string) => {
+        switch (type) {
+            case 'open':
+                return setImageType(open);
+            case 'smile':
+                return setImageType(smile);
+            case 'sideeyed':
+                return setImageType(Sideeyed);
+            default:
+                return setImageType(DefaultImage);
+        }
+    }
+    return (
+        <div className="flex items-center md:flex-row flex-col max-md:p-4  w-full h-full md:min-h-screen gap-10 md:p-10 overflow-scroll text-white bg-black">
+            <div className="md:w-1/3 w-full h-full p-4 border shadow bg-white/10 border-white/20 shadow-gray rounded-xl "
+                onMouseEnter={() => handleImageChange("smile")} onMouseLeave={() => handleImageChange("")} >
+                <Sidebar props={ImageType} />
+            </div>
+            <div className="w-full h-full md:overflow-hidden shadow bg-white/10 border-white/20 border shadow-gray rounded-xl "
+                onMouseEnter={() => handleImageChange("sideeyed")} onMouseLeave={() => handleImageChange("")} >
 
-  const [transform, setTransform] = useState("none");
-  const [shadow, setShadow] = useState("shadow-lg");
+                <MainContent />
+            </div>
+            <div>
 
-  const handleMouseMove = (e) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / (width / 2);
-    const y = (e.clientY - top - height / 2) / (height / 2);
-
-    const rotateX = y * 1;
-    const rotateY = -x * 1;
-    const translateZ = -5; // Slight elevation effect
-
-    setTransform(`perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${translateZ}px)`);
-    setShadow(" shadow-2xl ");
-  };
-
-  const handleMouseLeave = () => {
-    setTransform("none");
-    setShadow(" shadow-lg ");
-  };
-
-
-  return (
-    <div className=" flex flex-col  items-center  justify-around gap-10  md:p-10 p-4  pt-10    ">
-      <div className="md:w-1/2 w-full cursor-pointer " style={{ transform, transformStyle: "preserve-3d" }}
-      // onMouseMove={handleMouseMove}
-      // onMouseLeave={handleMouseLeave}
-      >
-
-        {/* <img src={image} alt=" " className=" shadow shadow-xl w-full  h-auto transition-transform duration-200  object-cover rounded-xl  bg-black  overflow-hidden hover " /> */}
-        <img src={image} alt=" " className="w-full h-full selection-none shadow rounded-xl  object-cover transition-transform duration-300 ease-out"
-          style={{ transform, transformStyle: "preserve-3d" }}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave} />
-      </div>
-      <div className=" w-full h-20 font-WhyteRegular  text-xl text-center">
-        we are working on making this space a better place to land
-        <div className=" text-lg font-WhyteBold ">  - srinivas ambati</div>
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
+            </div>
+        </div>)
+}
+export default Hero

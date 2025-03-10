@@ -29,7 +29,7 @@
 }
 
 * {
-  font-family: "WhyteInktrap-Regular"
+  font-family: "poppins";
 }
 
 .herogreen {
@@ -44,4 +44,15 @@
   background-image: radial-gradient(farthest-corner at 40px 40px,
       #000000 0%,
       #097756 100%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
