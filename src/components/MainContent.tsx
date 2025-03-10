@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import About from './PageComponents/About'
-import ContactPage from './PageComponents/ContactPage'
 import Projects from './PageComponents/Projects'
+import SkillsPage from './PageComponents/SkillsPage'
 
 const MainContent = () => {
     const Data = [
         { name: "About", link: "about", component: <About /> },
         { name: "Projects", link: "projects", component: <Projects /> },
-        { name: "Contact", link: "contact", component: <ContactPage /> }
+        { name: "Skills", link: "stack", component: <SkillsPage /> }
     ]
     const [Page, setPage] = useState(Data[0])
     const handleContent = (prop: any) => {
