@@ -22,14 +22,14 @@ export default function JobCard({
     description,
 }: JobCardProps) {
     return (
-        <div className="w-full relative  p-4 rounded-2xl shadow-lg flex gap-4">
+        <div className="w-full relative  md:p-4 rounded-2xl shadow-lg flex gap-4">
             <div className=" z-10  bg-white rounded-full  w-10 h-10 flex-none">
                 <img src={logoUrl} alt={`${company} Logo`} className="  rounded-lg object-cover w-full h-full" />
             </div>
 
             {/* Job Info */}
             <div className="flex flex-col w-full">
-                <div className=" flex  items-start justify-between ">
+                <div className=" flex md:flex-row flex-col  items-start justify-between ">
 
                     <div className="flex justify-between items-start">
                         <div className="">
