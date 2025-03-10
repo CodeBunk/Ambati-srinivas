@@ -6,7 +6,7 @@ import Postman from "@/assets/images/skills/Postman.svg"
 import AWS from "@/assets/images/skills/AWS.png"
 const SkillsPage = () => {
     return (
-        <div className=' min-h-lg w-full  '>
+        <div className=' h-full w-full  '>
 
             <div className=' text-2xl font-Bold pb-6 '>
                 Skills
@@ -14,7 +14,7 @@ const SkillsPage = () => {
 
 
 
-            <div className=' flex items-center  gap-10 '>
+            <div className=' flex items-center overflow-scroll scrollbar-hide w-full   gap-10 '>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />

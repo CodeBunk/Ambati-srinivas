@@ -15,7 +15,7 @@ const About = () => {
             start: " Oct 2022",
             end: "Oct 2024",
             description:
-                "Built and maintained an order management panel with real-time updates for logistics and customer support, improving operational efficiency.",
+                "Played a key role in shaping the startup's vision by building scalable and dynamic solutions from the ground up. Took ownership of the frontend architecture, ensuring seamless user experiences. Collaborated closely with cross-functional teams to drive innovation and deliver high-impact features under tight deadlines, embodying the fast-paced startup culture.",
         },
 
         {

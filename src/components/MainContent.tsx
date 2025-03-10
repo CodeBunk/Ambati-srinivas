@@ -19,7 +19,7 @@ const MainContent = () => {
     }
 
     return (
-        <div className=' relative w-full h-full md:px-4 md:pb-4 overflow-hidden  scrollbar  '>
+        <div className=' relative w-full md:h-full h-screen px-4 md:pb-4 md:overflow-hidden  scrollbar  '>
             <div className='relative  grid  h-10 grid-cols-3  bg-transparent overflow-scroll scrollbar-hide'>
                 <div className='absolute top-0 z-0 w-full bg-black h-1/2 rounded-t-xl'>
                 </div>
@@ -35,7 +35,7 @@ const MainContent = () => {
                 </div>
                 <div className='z-20 bg-white/10 h-1/2 rounded-t-xl' />
             </div>
-            <div className=' z-10 absolute top-0   h-[calc(100%-40px)] overflow-hidden p-4  '>
+            <div className=' z-10 absolute top-0  h-screen md:h-[calc(100%-40px)] overflow-hidden p-4  '>
                 <div className='h-full overflow-scroll scrollbar-hide'>
                     {Data.map((data: any, index: number) => (
                         <div
