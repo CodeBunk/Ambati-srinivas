@@ -32,7 +32,7 @@ const BaseLayout = () => {
   return (
     <div className='flex flex-col justify-between md:h-screen'>
       {/* <Navbar/> */}
-      <div onMouseEnter={() => setValue(true)} onClick={() => setValue(true)} className={`   absolute bottom-4 right-4  z-40 flex items-center justify-center  hover:w-20 hover:h-20 w-10 h-10   transition-all duration-300 cursor-pointer  ${Value ? " w-20 h-20  " : "  "}  `}>
+      <div onMouseEnter={() => setValue(true)} onTouchMoveCapture={() => setValue(true)} onClick={() => setValue(true)} className={`   absolute bottom-4 right-4  z-40 flex items-center justify-center  hover:w-20 hover:h-20 w-10 h-10   transition-all duration-300 cursor-pointer  ${Value ? " w-20 h-20  " : "  "}  `}>
         <div onClick={() => { Value ? setValue(true) : console.log("not setting value") }} className={`" z-[50] border border-black/20 font-poppins relative rounded-full bg-white hover:scale-[105%] transition-all duration-300  w-10 h-10  flex items-center justify-center cursor-pointer  ${Value ? " scale-[70%] bg-red text-white " : " text-black"} "`}>
           {!Value ? "🕹️" : " X "}
 
