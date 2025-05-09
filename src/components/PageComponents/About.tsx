@@ -1,10 +1,23 @@
 import React from 'react'
 import JobCard from '../Elements/Resumecard'
 import LCS from "../../assets/images/LCS.png"
+import Image from "../../assets/avatar/default.jpeg"
 import Travana from "../../assets/images/Travana.png"
 const About = () => {
 
     const Experiences = [
+        {
+            company: "Freelance",
+            href: "",
+            badges: [],
+            location: "Hyderabad",
+            title: "Frontend Developer",
+            logoUrl: Image,
+            start: " Oct 2024",
+            // end: "",
+            description:
+                "Led full-stack development initiatives for diverse client projects, implementing end-to-end solutions using React, Node.js, and MongoDB. Designed and developed RESTful APIs, managed database architecture, and implemented secure authentication systems. Created responsive, user-friendly interfaces while ensuring optimal performance and scalability. Collaborated with clients to understand requirements, provide technical guidance, and deliver solutions that exceeded expectations.",
+        },
         {
             company: "Leafcraft Pvt LTD",
             href: "https://leafcraft.co",
@@ -70,7 +83,7 @@ const About = () => {
                             location={work?.location}
                             title={work.company}
                             company={work.company}
-                            href={work.href}
+                            href={work?.href}
                             start={`${work.start}`}
                             end={`${work.end ?? "Present"}`}
                             description={work.description}
