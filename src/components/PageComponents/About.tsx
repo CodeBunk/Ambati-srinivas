@@ -50,12 +50,11 @@ const About = () => {
 
                 <div className=' text-2xl font-Bold pb-3    '>Helloo!</div>
                 <div className=' font-poppins  '>
-                    I'm a frontend developer skilled in React, TypeScript, and Tailwind CSS, focused on building scalable, high-performance UIs. I specialize in clean design, seamless API integrations, and optimized user experiences, ensuring that every interface is both functional and visually compelling.
+                    I'm a Fullstack Web Developer skilled in React, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB, focused on building scalable, high-performance applications. I specialize in clean UI design, seamless API integrations, and optimized user experiences, ensuring every interface is both functional and visually compelling.
                 </div>
                 <br />
                 <div className=' font-poppins    '>
-                    With a strong understanding of UI/UX principles, I create intuitive applications that enhance usability and engagement. I'm always learning, adapting to new technologies, and refining my approach to deliver efficient, maintainable, and high-quality code.
-                </div>
+                    With a strong understanding of UI/UX principles and backend architecture, I create intuitive, end-to-end solutions that enhance usability, engagement, and performance. I'm constantly learning, adapting to new technologies, and refining my approach to deliver efficient, maintainable, and high-quality code.                </div>
 
             </div>
             <div className=' w-full h-full '>
