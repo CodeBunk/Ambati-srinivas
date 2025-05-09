@@ -1,6 +1,7 @@
 import React from 'react'
 import Trinity from "@/assets/images/Projects/trinity.png"
 import Sabu from "@/assets/images/Projects/sabu.png"
+import Nvigo from "@/assets/images/Projects/nvigo.png"
 import Travana from "@/assets/images/Projects/travana.png"
 import UnitsDB from "@/assets/images/Projects/unitsdb.png"
 import RCTS from "@/assets/images/Projects/RCTS.png"
@@ -18,7 +19,14 @@ const Projects = () => {
             link: "https://trinityxr.in",
             description: " ",
             Tags: ["Dev", "Design", "Deployment", "VR-AR"],
-
+        },
+        {
+            title: "Nvigo App",
+            Image: Nvigo,
+            date: "",
+            link: "https://nvigo.io/",
+            description: " ",
+            Tags: ["Dev", "Design", "Ideation", "Full Stack Application"],
         },
         {
             title: "Sabu Cyril",
@@ -27,8 +35,8 @@ const Projects = () => {
             link: "https://sabu-cyril.vercel.app/",
             description: " ",
             Tags: ["Design", "Dev", "Deployment"],
-
         },
+
         {
             title: "LeafCode",
             Image: Leafcode,
@@ -36,7 +44,6 @@ const Projects = () => {
             // link: "https://travana.io/",
             description: " ",
             Tags: ["Product", "Dev", "AI Developer", "Design", "Product management"],
-
         },
         {
             title: "Bae Furnishings ",
@@ -45,7 +52,6 @@ const Projects = () => {
             // link: "https://travana.io/",
             description: " ",
             Tags: ["Dev", "Deployment", "Design"],
-
         },
         {
             title: "OffBeatCompass",
@@ -54,7 +60,6 @@ const Projects = () => {
             // link: "https://travana.io/",
             description: " ",
             Tags: ["CRM", "Design", "SalesTool", "Dev", "Deployment", "Ecommerce"],
-
         },
         {
             title: "UnitsDB ",
@@ -63,17 +68,16 @@ const Projects = () => {
             // link: "https://travana.io/",
             description: " ",
             Tags: ["Product", "Full Stack Application", "Dev", "Design"],
+        },
+        {
+            title: "RCTS- IIITH ",
+            Image: RCTS,
+            date: "",
+            // link: "https://travana.io/",
+            description: " ",
+            Tags: ["JSON", "Dynamic Page", "Dev", "Atomic Design"],
 
         },
-        // {
-        //     title: "RCTS- IIITH ",
-        //     Image: RCTS,
-        //     date: "",
-        //     // link: "https://travana.io/",
-        //     description: " ",
-        //     Tags: ["JSON", "Dynamic Page", "Dev", "Atomic Design"],
-
-        // },
         {
             title: "Travana ",
             Image: Travana,
@@ -81,7 +85,6 @@ const Projects = () => {
             link: "https://travana.io/",
             description: " ",
             Tags: ["Dev", "Deployment"],
-
         },
 
     ]

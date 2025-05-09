@@ -36,9 +36,9 @@ export default function JobCard({
                             <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
                             <div className=" flex gap-3 ">
 
-                                <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">
+                                {href && <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">
                                     {company}
-                                </a>
+                                </a>}
                                 <div className="flex items-center gap-1">
                                     📍 <span>{location}</span>
                                 </div>
