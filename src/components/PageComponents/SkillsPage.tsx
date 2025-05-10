@@ -20,7 +20,7 @@ const SkillsPage = () => {
             <div className=' flex items-center overflow-scroll scrollbar-hide w-full   gap-10 '>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
-                <img src={node} className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
+                {/* <img src={node} className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" /> */}
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
                 <img src={Mongo} className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />
                 <img src={Redux} className=' aspect-square bg-black/50 p-2 h-24 w-24 rounded-xl ' alt="" />

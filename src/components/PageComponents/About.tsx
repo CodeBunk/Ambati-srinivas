@@ -16,7 +16,7 @@ const About = () => {
             start: " Oct 2024",
             // end: "",
             description:
-                "Led full-stack development initiatives for diverse client projects, implementing end-to-end solutions using React, Node.js, and MongoDB. Designed and developed RESTful APIs, managed database architecture, and implemented secure authentication systems. Created responsive, user-friendly interfaces while ensuring optimal performance and scalability. Collaborated with clients to understand requirements, provide technical guidance, and deliver solutions that exceeded expectations.",
+                "Led full-stack development initiatives for diverse client projects, implementing end-to-end solutions using React,Next.js, and MongoDB. Designed and developed RESTful APIs, managed database architecture, and implemented secure authentication systems. Created responsive, user-friendly interfaces while ensuring optimal performance and scalability. Collaborated with clients to understand requirements, provide technical guidance, and deliver solutions that exceeded expectations.",
         },
         {
             company: "Leafcraft Pvt LTD",
@@ -63,7 +63,7 @@ const About = () => {
 
                 <div className=' text-2xl font-Bold pb-3    '>Helloo!</div>
                 <div className=' font-poppins  '>
-                    I'm a Fullstack Web Developer skilled in React, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB, focused on building scalable, high-performance applications. I specialize in clean UI design, seamless API integrations, and optimized user experiences, ensuring every interface is both functional and visually compelling.
+                    I'm a frontend developer skilled in React, TypeScript, and Tailwind CSS, focused on building scalable, high-performance UIs. I specialize in clean design, seamless API integrations, and optimized user experiences, ensuring that every interface is both functional and visually compelling.
                 </div>
                 <br />
                 <div className=' font-poppins    '>
