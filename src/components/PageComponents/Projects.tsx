@@ -53,14 +53,14 @@ const Projects = () => {
             description: " ",
             Tags: ["Dev", "Deployment", "Design"],
         },
-        {
-            title: "OffBeatCompass",
-            Image: Offbeat,
-            date: "",
-            // link: "https://travana.io/",
-            description: " ",
-            Tags: ["CRM", "Design", "SalesTool", "Dev", "Deployment", "Ecommerce"],
-        },
+        // {
+        //     title: "OffBeatCompass",
+        //     Image: Offbeat,
+        //     date: "",
+        //     // link: "https://travana.io/",
+        //     description: " ",
+        //     Tags: ["CRM", "Design", "SalesTool", "Dev", "Deployment", "Ecommerce"],
+        // },
         {
             title: "UnitsDB ",
             Image: UnitsDB,
