@@ -44,16 +44,19 @@ const HeroImage = (props: any) => {
         <div className=" text-lg font-WhyteBold ">  - srinivas ambati</div> */}
         {props?.description}
       </div>
-      <div className="w-1/2 h-8 bg-gray/20 rounded-full overflow-hidden">
+      <div className=" animate selection-none text-gray  text-center">
+        🚧 Under construction! <br /> More awesomeness coming soon...
+      </div>
+      <div className=" hidden w-1/2 h-8 bg-gray/20 rounded-full overflow-hidden">
         <div
           className="h-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
           style={{ width: `${props.percentage}%` }}
         >
           <div className="h-full bg-pattern opacity-50"></div>
         </div>
-        <div className=" absolute left-0 animate-pulse flex items-center justify-center text-black text-md font-bold text-center w-full    ">
+        {/* <div className=" absolute left-0 animate-pulse flex items-center justify-center text-black text-md font-bold text-center w-full    ">
           {props.percentage}% loading....
-        </div>
+        </div> */}
       </div>
     </div>
   );
