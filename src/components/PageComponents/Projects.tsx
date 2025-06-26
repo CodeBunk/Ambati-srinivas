@@ -5,6 +5,7 @@ import Nvigo from "@/assets/images/Projects/nvigo.png"
 import Travana from "@/assets/images/Projects/travana.png"
 import UnitsDB from "@/assets/images/Projects/unitsdb.png"
 import RCTS from "@/assets/images/Projects/RCTS.png"
+import Bhargav from "@/assets/images/Projects/Bhargav.png"
 import Offbeat from "@/assets/images/Projects/Offbeat.png"
 import Bae from "@/assets/images/Projects/bae copy.png"
 import Leafcode from "@/assets/images/Projects/leafcode copy.png"
@@ -35,6 +36,14 @@ const Projects = () => {
             link: "https://sabu-cyril.vercel.app/",
             description: " ",
             Tags: ["Design", "Dev", "Deployment"],
+        },
+        {
+            title: "Bhargav Kattunga ",
+            Image: Bhargav,
+            date: "",
+            link: "https://bhargavkattunga.in/",
+            description: "",
+            Tags: ["Dev", "Design", "Portfolio", "PersonalBrand",],
         },
 
         {
