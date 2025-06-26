@@ -21,7 +21,7 @@ const Hero = () => {
         }
     }
     return (
-        <div className="flex md:items-center md:flex-row flex-col max-md:p-4  w-full   h-screen gap-10 md:p-10 overflow-scroll text-white bg-black">
+        <div className="flex md:items-center md:flex-row flex-col max-md:p-4  w-full   h-screen gap-10 md:p-10 max-md:overflow-scroll text-white bg-black">
             <div className="md:w-1/3 w-full max-md:h-auto h-full  p-4 border shadow bg-white/10 border-white/20 shadow-gray rounded-xl "
                 onMouseEnter={() => handleImageChange("smile")} onMouseLeave={() => handleImageChange("")} >
                 <Sidebar props={ImageType} />
